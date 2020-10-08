@@ -1,0 +1,23 @@
+C:\Users\Abraham Duarte\Documents\Visual Studio 2019\Projects\Clase TAP ITH-L5\Clase TAP ITH-L5\bin\Debug\Clase TAP ITH-L5.exe.config
+C:\Users\Abraham Duarte\Documents\Visual Studio 2019\Projects\Clase TAP ITH-L5\Clase TAP ITH-L5\bin\Debug\Clase TAP ITH-L5.exe
+C:\Users\Abraham Duarte\Documents\Visual Studio 2019\Projects\Clase TAP ITH-L5\Clase TAP ITH-L5\bin\Debug\Clase TAP ITH-L5.pdb
+C:\Users\Abraham Duarte\Documents\Visual Studio 2019\Projects\Clase TAP ITH-L5\Clase TAP ITH-L5\obj\Debug\Clase TAP ITH-L5.csprojAssemblyReference.cache
+C:\Users\Abraham Duarte\Documents\Visual Studio 2019\Projects\Clase TAP ITH-L5\Clase TAP ITH-L5\obj\Debug\Clase_TAP_ITH_L5.Form1.resources
+C:\Users\Abraham Duarte\Documents\Visual Studio 2019\Projects\Clase TAP ITH-L5\Clase TAP ITH-L5\obj\Debug\Clase_TAP_ITH_L5.Properties.Resources.resources
+C:\Users\Abraham Duarte\Documents\Visual Studio 2019\Projects\Clase TAP ITH-L5\Clase TAP ITH-L5\obj\Debug\Clase TAP ITH-L5.csproj.GenerateResource.cache
+C:\Users\Abraham Duarte\Documents\Visual Studio 2019\Projects\Clase TAP ITH-L5\Clase TAP ITH-L5\obj\Debug\Clase TAP ITH-L5.csproj.CoreCompileInputs.cache
+C:\Users\Abraham Duarte\Documents\Visual Studio 2019\Projects\Clase TAP ITH-L5\Clase TAP ITH-L5\obj\Debug\Clase TAP ITH-L5.exe
+C:\Users\Abraham Duarte\Documents\Visual Studio 2019\Projects\Clase TAP ITH-L5\Clase TAP ITH-L5\obj\Debug\Clase TAP ITH-L5.pdb
+C:\Users\abrah\OneDrive\Documentos\Visual Studio 2019\Projects\Clase TAP ITH-L5\Clase TAP ITH-L5\bin\Debug\Clase TAP ITH-L5.exe.config
+C:\Users\abrah\OneDrive\Documentos\Visual Studio 2019\Projects\Clase TAP ITH-L5\Clase TAP ITH-L5\bin\Debug\Clase TAP ITH-L5.exe
+C:\Users\abrah\OneDrive\Documentos\Visual Studio 2019\Projects\Clase TAP ITH-L5\Clase TAP ITH-L5\bin\Debug\Clase TAP ITH-L5.pdb
+C:\Users\abrah\OneDrive\Documentos\Visual Studio 2019\Projects\Clase TAP ITH-L5\Clase TAP ITH-L5\obj\Debug\Clase TAP ITH-L5.csprojAssemblyReference.cache
+C:\Users\abrah\OneDrive\Documentos\Visual Studio 2019\Projects\Clase TAP ITH-L5\Clase TAP ITH-L5\obj\Debug\Clase_TAP_ITH_L5.MAIN.resources
+C:\Users\abrah\OneDrive\Documentos\Visual Studio 2019\Projects\Clase TAP ITH-L5\Clase TAP ITH-L5\obj\Debug\Clase_TAP_ITH_L5.CONTROLS.resources
+C:\Users\abrah\OneDrive\Documentos\Visual Studio 2019\Projects\Clase TAP ITH-L5\Clase TAP ITH-L5\obj\Debug\Clase_TAP_ITH_L5.Form1.resources
+C:\Users\abrah\OneDrive\Documentos\Visual Studio 2019\Projects\Clase TAP ITH-L5\Clase TAP ITH-L5\obj\Debug\Clase_TAP_ITH_L5.Módulo_I.SPLASH.resources
+C:\Users\abrah\OneDrive\Documentos\Visual Studio 2019\Projects\Clase TAP ITH-L5\Clase TAP ITH-L5\obj\Debug\Clase_TAP_ITH_L5.Properties.Resources.resources
+C:\Users\abrah\OneDrive\Documentos\Visual Studio 2019\Projects\Clase TAP ITH-L5\Clase TAP ITH-L5\obj\Debug\Clase TAP ITH-L5.csproj.GenerateResource.cache
+C:\Users\abrah\OneDrive\Documentos\Visual Studio 2019\Projects\Clase TAP ITH-L5\Clase TAP ITH-L5\obj\Debug\Clase TAP ITH-L5.csproj.CoreCompileInputs.cache
+C:\Users\abrah\OneDrive\Documentos\Visual Studio 2019\Projects\Clase TAP ITH-L5\Clase TAP ITH-L5\obj\Debug\Clase TAP ITH-L5.exe
+C:\Users\abrah\OneDrive\Documentos\Visual Studio 2019\Projects\Clase TAP ITH-L5\Clase TAP ITH-L5\obj\Debug\Clase TAP ITH-L5.pdb
