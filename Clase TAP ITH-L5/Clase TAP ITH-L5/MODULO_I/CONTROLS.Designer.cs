@@ -29,18 +29,18 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.TreeNode treeNode120 = new System.Windows.Forms.TreeNode("Node2");
-            System.Windows.Forms.TreeNode treeNode121 = new System.Windows.Forms.TreeNode("Node3");
-            System.Windows.Forms.TreeNode treeNode122 = new System.Windows.Forms.TreeNode("Raíz I", new System.Windows.Forms.TreeNode[] {
-            treeNode120,
-            treeNode121});
-            System.Windows.Forms.TreeNode treeNode123 = new System.Windows.Forms.TreeNode("Node4");
-            System.Windows.Forms.TreeNode treeNode124 = new System.Windows.Forms.TreeNode("Node5");
-            System.Windows.Forms.TreeNode treeNode125 = new System.Windows.Forms.TreeNode("Node6");
-            System.Windows.Forms.TreeNode treeNode126 = new System.Windows.Forms.TreeNode("Raíz II", new System.Windows.Forms.TreeNode[] {
-            treeNode123,
-            treeNode124,
-            treeNode125});
+            System.Windows.Forms.TreeNode treeNode78 = new System.Windows.Forms.TreeNode("Node2");
+            System.Windows.Forms.TreeNode treeNode79 = new System.Windows.Forms.TreeNode("Node3");
+            System.Windows.Forms.TreeNode treeNode80 = new System.Windows.Forms.TreeNode("Raíz I", new System.Windows.Forms.TreeNode[] {
+            treeNode78,
+            treeNode79});
+            System.Windows.Forms.TreeNode treeNode81 = new System.Windows.Forms.TreeNode("Node4");
+            System.Windows.Forms.TreeNode treeNode82 = new System.Windows.Forms.TreeNode("Node5");
+            System.Windows.Forms.TreeNode treeNode83 = new System.Windows.Forms.TreeNode("Node6");
+            System.Windows.Forms.TreeNode treeNode84 = new System.Windows.Forms.TreeNode("Raíz II", new System.Windows.Forms.TreeNode[] {
+            treeNode81,
+            treeNode82,
+            treeNode83});
             this.listBox1 = new System.Windows.Forms.ListBox();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.treeView1 = new System.Windows.Forms.TreeView();
@@ -81,9 +81,9 @@
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.timer2 = new System.Windows.Forms.Timer(this.components);
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
+            this.button4 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.linkLabel2 = new System.Windows.Forms.LinkLabel();
             this.statusStrip1.SuspendLayout();
@@ -116,28 +116,28 @@
             this.treeView1.ItemHeight = 30;
             this.treeView1.Location = new System.Drawing.Point(182, 48);
             this.treeView1.Name = "treeView1";
-            treeNode120.Name = "Node2";
-            treeNode120.Text = "Node2";
-            treeNode121.Name = "Node3";
-            treeNode121.Text = "Node3";
-            treeNode122.BackColor = System.Drawing.Color.Blue;
-            treeNode122.Name = "Node0";
-            treeNode122.NodeFont = new System.Drawing.Font("Microsoft YaHei Light", 14.25F, System.Drawing.FontStyle.Italic);
-            treeNode122.Text = "Raíz I";
-            treeNode122.ToolTipText = "Ejemplo de una Raíz Base";
-            treeNode123.Name = "Node4";
-            treeNode123.Text = "Node4";
-            treeNode124.Name = "Node5";
-            treeNode124.Text = "Node5";
-            treeNode125.Name = "Node6";
-            treeNode125.Text = "Node6";
-            treeNode126.BackColor = System.Drawing.Color.Fuchsia;
-            treeNode126.Name = "Node1";
-            treeNode126.NodeFont = new System.Drawing.Font("Microsoft YaHei Light", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            treeNode126.Text = "Raíz II";
+            treeNode78.Name = "Node2";
+            treeNode78.Text = "Node2";
+            treeNode79.Name = "Node3";
+            treeNode79.Text = "Node3";
+            treeNode80.BackColor = System.Drawing.Color.Blue;
+            treeNode80.Name = "Node0";
+            treeNode80.NodeFont = new System.Drawing.Font("Microsoft YaHei Light", 14.25F, System.Drawing.FontStyle.Italic);
+            treeNode80.Text = "Raíz I";
+            treeNode80.ToolTipText = "Ejemplo de una Raíz Base";
+            treeNode81.Name = "Node4";
+            treeNode81.Text = "Node4";
+            treeNode82.Name = "Node5";
+            treeNode82.Text = "Node5";
+            treeNode83.Name = "Node6";
+            treeNode83.Text = "Node6";
+            treeNode84.BackColor = System.Drawing.Color.Fuchsia;
+            treeNode84.Name = "Node1";
+            treeNode84.NodeFont = new System.Drawing.Font("Microsoft YaHei Light", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            treeNode84.Text = "Raíz II";
             this.treeView1.Nodes.AddRange(new System.Windows.Forms.TreeNode[] {
-            treeNode122,
-            treeNode126});
+            treeNode80,
+            treeNode84});
             this.treeView1.Size = new System.Drawing.Size(143, 292);
             this.treeView1.TabIndex = 3;
             this.treeView1.AfterSelect += new System.Windows.Forms.TreeViewEventHandler(this.treeView1_AfterSelect);
@@ -196,14 +196,14 @@
             // opción2ToolStripMenuItem
             // 
             this.opción2ToolStripMenuItem.Name = "opción2ToolStripMenuItem";
-            this.opción2ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.opción2ToolStripMenuItem.Size = new System.Drawing.Size(122, 22);
             this.opción2ToolStripMenuItem.Text = "Opción 2";
             this.opción2ToolStripMenuItem.Click += new System.EventHandler(this.opción2ToolStripMenuItem_Click);
             // 
             // opción1ToolStripMenuItem
             // 
             this.opción1ToolStripMenuItem.Name = "opción1ToolStripMenuItem";
-            this.opción1ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.opción1ToolStripMenuItem.Size = new System.Drawing.Size(122, 22);
             this.opción1ToolStripMenuItem.Text = "Opción 1";
             this.opción1ToolStripMenuItem.Click += new System.EventHandler(this.opción1ToolStripMenuItem_Click);
             // 
@@ -232,19 +232,19 @@
             // cerrarVentanaToolStripMenuItem
             // 
             this.cerrarVentanaToolStripMenuItem.Name = "cerrarVentanaToolStripMenuItem";
-            this.cerrarVentanaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.cerrarVentanaToolStripMenuItem.Size = new System.Drawing.Size(151, 22);
             this.cerrarVentanaToolStripMenuItem.Text = "Cerrar Ventana";
             this.cerrarVentanaToolStripMenuItem.Click += new System.EventHandler(this.cerrarVentanaToolStripMenuItem_Click);
             // 
             // toolStripSeparator2
             // 
             this.toolStripSeparator2.Name = "toolStripSeparator2";
-            this.toolStripSeparator2.Size = new System.Drawing.Size(177, 6);
+            this.toolStripSeparator2.Size = new System.Drawing.Size(148, 6);
             // 
             // salirToolStripMenuItem
             // 
             this.salirToolStripMenuItem.Name = "salirToolStripMenuItem";
-            this.salirToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.salirToolStripMenuItem.Size = new System.Drawing.Size(151, 22);
             this.salirToolStripMenuItem.Text = "&Salir de la App";
             this.salirToolStripMenuItem.Click += new System.EventHandler(this.salirToolStripMenuItem_Click);
             // 
@@ -290,7 +290,7 @@
             this.acercaDeToolStripMenuItem.Image = global::Clase_TAP_ITH_L5.Properties.Resources.Microsoft_logo_R;
             this.acercaDeToolStripMenuItem.Name = "acercaDeToolStripMenuItem";
             this.acercaDeToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Y)));
-            this.acercaDeToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.acercaDeToolStripMenuItem.Size = new System.Drawing.Size(177, 22);
             this.acercaDeToolStripMenuItem.Text = "Acerca De...";
             this.acercaDeToolStripMenuItem.Click += new System.EventHandler(this.acercaDeToolStripMenuItem_Click);
             // 
@@ -473,15 +473,16 @@
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "groupBox3";
             // 
-            // button3
+            // label2
             // 
-            this.button3.Location = new System.Drawing.Point(30, 59);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(115, 44);
-            this.button3.TabIndex = 0;
-            this.button3.Text = "INICIO";
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft YaHei", 72F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.Red;
+            this.label2.Location = new System.Drawing.Point(168, 36);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(345, 128);
+            this.label2.TabIndex = 2;
+            this.label2.Text = "label2";
             // 
             // button4
             // 
@@ -493,16 +494,15 @@
             this.button4.UseVisualStyleBackColor = true;
             this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
-            // label2
+            // button3
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft YaHei", 72F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.Red;
-            this.label2.Location = new System.Drawing.Point(168, 36);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(345, 128);
-            this.label2.TabIndex = 2;
-            this.label2.Text = "label2";
+            this.button3.Location = new System.Drawing.Point(30, 59);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(115, 44);
+            this.button3.TabIndex = 0;
+            this.button3.Text = "INICIO";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // linkLabel1
             // 

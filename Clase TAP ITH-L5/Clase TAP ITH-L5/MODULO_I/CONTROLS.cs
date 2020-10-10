@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Drawing;
 using System.IO;
 using System.Windows.Forms;
 
@@ -80,8 +81,8 @@ namespace Clase_TAP_ITH_L5
         private void salirToolStripMenuItem_Click(object sender, EventArgs e)
         {
             this.Close();
-            //Application.Exit();
-            this._obj.Show();
+            Application.Exit();
+            //this._obj.Show();
         }
 
         private void cerrarVentanaToolStripMenuItem_Click(object sender, EventArgs e)
@@ -210,7 +211,6 @@ namespace Clase_TAP_ITH_L5
                 Console.WriteLine("ERROR: " + ex.Message);
             }
         }
-
         private void linkLabel2_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             try
@@ -218,7 +218,7 @@ namespace Clase_TAP_ITH_L5
                 OpenFileDialog ofd = new OpenFileDialog();
 
                 ofd.FileName = string.Empty;
-                ofd.Filter = "Archivos de Texto |*.txt, *.csv";
+                ofd.Filter = "Archivos de Texto |*.txt;*.csv";
                 ofd.Title = "Seleccione ubicación del archivo...";
 
                 DialogResult dr = ofd.ShowDialog();
@@ -226,7 +226,14 @@ namespace Clase_TAP_ITH_L5
                 if (dr == DialogResult.OK)
                 {
                     string ruta = ofd.FileName;
-                    textBox1.Text = File.ReadAllText(ruta);
+                    //textBox1.Text = File.ReadAllText(ruta);
+
+                    string[] lineas = File.ReadAllLines(ruta);
+
+                    foreach (var item in lineas)
+                    {
+                        Console.WriteLine(item);
+                    }
                 }
             }
             catch (Exception ex)
