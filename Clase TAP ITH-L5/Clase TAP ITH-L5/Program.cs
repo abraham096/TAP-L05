@@ -13,8 +13,8 @@ namespace Clase_TAP_ITH_L5
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            //Application.Run(new Form1());
-            Application.Run(new EVENTOS());
+            //Application.Run(new CONTROLS());
+            Application.Run(new MODULO_I.OTROS_WF());
         }
     }
 }

@@ -29,18 +29,18 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.TreeNode treeNode78 = new System.Windows.Forms.TreeNode("Node2");
-            System.Windows.Forms.TreeNode treeNode79 = new System.Windows.Forms.TreeNode("Node3");
-            System.Windows.Forms.TreeNode treeNode80 = new System.Windows.Forms.TreeNode("Raíz I", new System.Windows.Forms.TreeNode[] {
-            treeNode78,
-            treeNode79});
-            System.Windows.Forms.TreeNode treeNode81 = new System.Windows.Forms.TreeNode("Node4");
-            System.Windows.Forms.TreeNode treeNode82 = new System.Windows.Forms.TreeNode("Node5");
-            System.Windows.Forms.TreeNode treeNode83 = new System.Windows.Forms.TreeNode("Node6");
-            System.Windows.Forms.TreeNode treeNode84 = new System.Windows.Forms.TreeNode("Raíz II", new System.Windows.Forms.TreeNode[] {
-            treeNode81,
-            treeNode82,
-            treeNode83});
+            System.Windows.Forms.TreeNode treeNode1 = new System.Windows.Forms.TreeNode("Node2");
+            System.Windows.Forms.TreeNode treeNode2 = new System.Windows.Forms.TreeNode("Node3");
+            System.Windows.Forms.TreeNode treeNode3 = new System.Windows.Forms.TreeNode("Raíz I", new System.Windows.Forms.TreeNode[] {
+            treeNode1,
+            treeNode2});
+            System.Windows.Forms.TreeNode treeNode4 = new System.Windows.Forms.TreeNode("Node4");
+            System.Windows.Forms.TreeNode treeNode5 = new System.Windows.Forms.TreeNode("Node5");
+            System.Windows.Forms.TreeNode treeNode6 = new System.Windows.Forms.TreeNode("Node6");
+            System.Windows.Forms.TreeNode treeNode7 = new System.Windows.Forms.TreeNode("Raíz II", new System.Windows.Forms.TreeNode[] {
+            treeNode4,
+            treeNode5,
+            treeNode6});
             this.listBox1 = new System.Windows.Forms.ListBox();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.treeView1 = new System.Windows.Forms.TreeView();
@@ -116,28 +116,28 @@
             this.treeView1.ItemHeight = 30;
             this.treeView1.Location = new System.Drawing.Point(182, 48);
             this.treeView1.Name = "treeView1";
-            treeNode78.Name = "Node2";
-            treeNode78.Text = "Node2";
-            treeNode79.Name = "Node3";
-            treeNode79.Text = "Node3";
-            treeNode80.BackColor = System.Drawing.Color.Blue;
-            treeNode80.Name = "Node0";
-            treeNode80.NodeFont = new System.Drawing.Font("Microsoft YaHei Light", 14.25F, System.Drawing.FontStyle.Italic);
-            treeNode80.Text = "Raíz I";
-            treeNode80.ToolTipText = "Ejemplo de una Raíz Base";
-            treeNode81.Name = "Node4";
-            treeNode81.Text = "Node4";
-            treeNode82.Name = "Node5";
-            treeNode82.Text = "Node5";
-            treeNode83.Name = "Node6";
-            treeNode83.Text = "Node6";
-            treeNode84.BackColor = System.Drawing.Color.Fuchsia;
-            treeNode84.Name = "Node1";
-            treeNode84.NodeFont = new System.Drawing.Font("Microsoft YaHei Light", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            treeNode84.Text = "Raíz II";
+            treeNode1.Name = "Node2";
+            treeNode1.Text = "Node2";
+            treeNode2.Name = "Node3";
+            treeNode2.Text = "Node3";
+            treeNode3.BackColor = System.Drawing.Color.Blue;
+            treeNode3.Name = "Node0";
+            treeNode3.NodeFont = new System.Drawing.Font("Microsoft YaHei Light", 14.25F, System.Drawing.FontStyle.Italic);
+            treeNode3.Text = "Raíz I";
+            treeNode3.ToolTipText = "Ejemplo de una Raíz Base";
+            treeNode4.Name = "Node4";
+            treeNode4.Text = "Node4";
+            treeNode5.Name = "Node5";
+            treeNode5.Text = "Node5";
+            treeNode6.Name = "Node6";
+            treeNode6.Text = "Node6";
+            treeNode7.BackColor = System.Drawing.Color.Fuchsia;
+            treeNode7.Name = "Node1";
+            treeNode7.NodeFont = new System.Drawing.Font("Microsoft YaHei Light", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            treeNode7.Text = "Raíz II";
             this.treeView1.Nodes.AddRange(new System.Windows.Forms.TreeNode[] {
-            treeNode80,
-            treeNode84});
+            treeNode3,
+            treeNode7});
             this.treeView1.Size = new System.Drawing.Size(143, 292);
             this.treeView1.TabIndex = 3;
             this.treeView1.AfterSelect += new System.Windows.Forms.TreeViewEventHandler(this.treeView1_AfterSelect);
@@ -548,6 +548,7 @@
             this.Margin = new System.Windows.Forms.Padding(6);
             this.Name = "CONTROLS";
             this.Text = "CONTROLS";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.CONTROLS_FormClosed);
             this.Load += new System.EventHandler(this.CONTROLS_Load);
             this.statusStrip1.ResumeLayout(false);
             this.statusStrip1.PerformLayout();

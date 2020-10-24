@@ -241,5 +241,9 @@ namespace Clase_TAP_ITH_L5
                 Console.WriteLine("ERROR: " + ex.Message);
             }
         }
+        private void CONTROLS_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            //this._obj.Show();
+        }
     }
 }

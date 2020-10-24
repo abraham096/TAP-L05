@@ -44,6 +44,7 @@
             this.label7 = new System.Windows.Forms.Label();
             this.maskedTextBox1 = new System.Windows.Forms.MaskedTextBox();
             this.button5 = new System.Windows.Forms.Button();
+            this.label8 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // textBox4
@@ -55,6 +56,7 @@
             this.textBox4.Size = new System.Drawing.Size(275, 29);
             this.textBox4.TabIndex = 0;
             this.textBox4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.textBox4.Leave += new System.EventHandler(this.TextBox4_Leave);
             this.textBox4.MouseLeave += new System.EventHandler(this.textBox4_MouseLeave);
             this.textBox4.MouseHover += new System.EventHandler(this.textBox4_MouseHover);
             // 
@@ -68,6 +70,8 @@
             this.textBox5.Size = new System.Drawing.Size(246, 315);
             this.textBox5.TabIndex = 1;
             this.toolTip1.SetToolTip(this.textBox5, "Muestra la información del archivo cargado");
+            this.textBox5.Leave += new System.EventHandler(this.TextBox5_Leave);
+            this.textBox5.MouseHover += new System.EventHandler(this.TextBox5_MouseHover);
             // 
             // linkLabel3
             // 
@@ -179,15 +183,25 @@
             // 
             this.button5.Location = new System.Drawing.Point(360, 371);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(75, 37);
+            this.button5.Size = new System.Drawing.Size(96, 37);
             this.button5.TabIndex = 13;
             this.button5.Text = "button5";
             this.button5.UseVisualStyleBackColor = true;
             this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(524, 378);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(59, 22);
+            this.label8.TabIndex = 14;
+            this.label8.Text = "label8";
+            // 
             // EVENTOS
             // 
             this.ClientSize = new System.Drawing.Size(802, 433);
+            this.Controls.Add(this.label8);
             this.Controls.Add(this.button5);
             this.Controls.Add(this.maskedTextBox1);
             this.Controls.Add(this.label7);
@@ -204,6 +218,7 @@
             this.Controls.Add(this.textBox4);
             this.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Name = "EVENTOS";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.EVENTOS_FormClosed);
             this.Load += new System.EventHandler(this.EVENTOS_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -272,5 +287,6 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.MaskedTextBox maskedTextBox1;
         private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Label label8;
     }
 }

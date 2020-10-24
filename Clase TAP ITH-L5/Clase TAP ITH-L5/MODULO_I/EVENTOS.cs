@@ -46,6 +46,13 @@ namespace Clase_TAP_ITH_L5
             }
         }
 
+        private void validaNumero()
+        {
+            if (!(textBox6.Text.Length > 4))
+            {
+                MessageBox.Show("La longitud no debe ser menor a 4 caracteres");
+            }
+        }
         private void EVENTOS_Load(object sender, EventArgs e)
         {
             textBox7.Text = "El KeyPress - Es cuando apenas presiono la tecla\n\r\n\rEl KeyDown - Es cuando la tecla, ya está abajo\n\r\n\rEl KeyUp es cuando suelto la tecla";
@@ -98,14 +105,6 @@ namespace Clase_TAP_ITH_L5
             validaNumero();
         }
 
-        private void validaNumero()
-        {
-            if (!(textBox6.Text.Length > 4))
-            {
-                MessageBox.Show("La longitud no debe ser menor a 4 caracteres");
-            }
-        }
-
         private void textBox6_Leave(object sender, EventArgs e)
         {
             validaNumero();
@@ -113,7 +112,31 @@ namespace Clase_TAP_ITH_L5
 
         private void button5_Click(object sender, EventArgs e)
         {
-            MessageBox.Show(maskedTextBox1.Text);
+            //MessageBox.Show(maskedTextBox1.Text);
+            CONTROLS ctrl = new CONTROLS();
+        }
+
+        private void TextBox5_Leave(object sender, EventArgs e)
+        {
+            label8.BackColor = Color.Red;
+        }
+
+        private void TextBox5_MouseHover(object sender, EventArgs e)
+        {
+            label8.BackColor = Color.Black;
+        }
+
+        private void TextBox4_Leave(object sender, EventArgs e)
+        {
+            if (!(textBox4.Text.Length > 0))
+            {
+                label7.Visible = true;
+            }
+        }
+
+        private void EVENTOS_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            new MODULO_I.MDI().FinalizaMDI(0);
         }
     }
 }

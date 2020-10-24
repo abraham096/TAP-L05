@@ -86,6 +86,24 @@
     <Compile Include="MODULO_I\EJS_BASICOS.Designer.cs">
       <DependentUpon>EJS_BASICOS.cs</DependentUpon>
     </Compile>
+    <Compile Include="MODULO_I\MDI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MODULO_I\MDI.Designer.cs">
+      <DependentUpon>MDI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MODULO_I\FORM_CLOSING_CLOSED.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MODULO_I\FORM_CLOSING_CLOSED.Designer.cs">
+      <DependentUpon>FORM_CLOSING_CLOSED.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MODULO_I\OTROS_WF.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MODULO_I\OTROS_WF.Designer.cs">
+      <DependentUpon>OTROS_WF.cs</DependentUpon>
+    </Compile>
     <Compile Include="MODULO_I\SPLASH.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -105,6 +123,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="MODULO_I\EJS_BASICOS.resx">
       <DependentUpon>EJS_BASICOS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MODULO_I\MDI.resx">
+      <DependentUpon>MDI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MODULO_I\FORM_CLOSING_CLOSED.resx">
+      <DependentUpon>FORM_CLOSING_CLOSED.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MODULO_I\OTROS_WF.resx">
+      <DependentUpon>OTROS_WF.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MODULO_I\SPLASH.resx">
       <DependentUpon>SPLASH.cs</DependentUpon>

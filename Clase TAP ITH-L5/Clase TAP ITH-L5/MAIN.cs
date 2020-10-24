@@ -30,6 +30,16 @@ namespace Clase_TAP_ITH_L5
 
         private void button2_Click(object sender, EventArgs e)
         {
+            CONTROLS ctrl = new CONTROLS(); // Tú lo puedes manipular
+            //new CONTROLS().Visible = true; // Se utiliza una sola vez
+
+            using (ctrl)
+            {
+                ctrl.Show();
+                this.Hide();
+            }
+
+            /*
             int op = comboBox2.SelectedIndex;
             //MessageBox.Show(op.ToString());
             Console.WriteLine("SELECCIONASTE: " + op);
@@ -58,6 +68,7 @@ namespace Clase_TAP_ITH_L5
             {
                 Console.WriteLine("ERROR: " + ex.Message);
             }
+            */
         }
     }
 }
