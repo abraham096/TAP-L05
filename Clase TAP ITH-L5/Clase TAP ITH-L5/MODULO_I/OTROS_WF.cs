@@ -79,11 +79,17 @@ namespace Clase_TAP_ITH_L5.MODULO_I
         {
         }
 
-        private void TextBox1_KeyPress(object sender, KeyPressEventArgs e)
+        private void TextBox2_KeyUp(object sender, KeyEventArgs e)
         {
+            string exp = @"[A-Z]{4}[\d]{6}[A-Z]{5}[A-Z0-9]{3}";
+            Regex expr = new Regex(exp);
+            bool flag = expr.IsMatch(textBox2.Text);
+
+            label2.Visible = !flag;
+            button5.Enabled = flag;
         }
 
-        private void TextBox1_TextChanged(object sender, EventArgs e)
+        private void TextBox1_KeyUp(object sender, KeyEventArgs e)
         {
             // EXPRESIONES REGULARES
             /**

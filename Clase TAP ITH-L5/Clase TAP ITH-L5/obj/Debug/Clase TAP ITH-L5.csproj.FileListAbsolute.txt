@@ -25,3 +25,4 @@ C:\Users\abrah\OneDrive\Documentos\Visual Studio 2019\Projects\Clase TAP ITH-L5\
 C:\Users\abrah\OneDrive\Documentos\Visual Studio 2019\Projects\Clase TAP ITH-L5\Clase TAP ITH-L5\obj\Debug\Clase_TAP_ITH_L5.MODULO_I.FORM_CLOSING_CLOSED.resources
 C:\Users\abrah\OneDrive\Documentos\Visual Studio 2019\Projects\Clase TAP ITH-L5\Clase TAP ITH-L5\obj\Debug\Clase_TAP_ITH_L5.MODULO_I.MDI.resources
 C:\Users\abrah\OneDrive\Documentos\Visual Studio 2019\Projects\Clase TAP ITH-L5\Clase TAP ITH-L5\obj\Debug\Clase_TAP_ITH_L5.MODULO_I.OTROS_WF.resources
+C:\Users\abrah\OneDrive\Documentos\Visual Studio 2019\Projects\Clase TAP ITH-L5\Clase TAP ITH-L5\obj\Debug\Clase_TAP_ITH_L5.MODULO_I.DGV_CTABs.resources

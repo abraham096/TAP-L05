@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.progressBar1 = new System.Windows.Forms.ProgressBar();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
@@ -42,13 +43,15 @@
             this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.Num = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Nombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label3 = new System.Windows.Forms.Label();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.button5 = new System.Windows.Forms.Button();
-            this.Num = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Nombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.label5 = new System.Windows.Forms.Label();
+            this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
@@ -176,8 +179,7 @@
             this.textBox1.Size = new System.Drawing.Size(197, 29);
             this.textBox1.TabIndex = 11;
             this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.textBox1.TextChanged += new System.EventHandler(this.TextBox1_TextChanged);
-            this.textBox1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TextBox1_KeyPress);
+            this.textBox1.KeyUp += new System.Windows.Forms.KeyEventHandler(this.TextBox1_KeyUp);
             // 
             // label2
             // 
@@ -221,11 +223,24 @@
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Num,
             this.Nombre});
-            this.dataGridView1.Location = new System.Drawing.Point(504, 296);
+            this.dataGridView1.Location = new System.Drawing.Point(504, 281);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.Size = new System.Drawing.Size(590, 179);
+            this.dataGridView1.Size = new System.Drawing.Size(590, 194);
             this.dataGridView1.TabIndex = 15;
+            // 
+            // Num
+            // 
+            this.Num.Frozen = true;
+            this.Num.HeaderText = "#";
+            this.Num.Name = "Num";
+            this.Num.ReadOnly = true;
+            // 
+            // Nombre
+            // 
+            this.Nombre.HeaderText = "Nombre";
+            this.Nombre.Name = "Nombre";
+            this.Nombre.ReadOnly = true;
             // 
             // label3
             // 
@@ -241,11 +256,12 @@
             // 
             this.textBox2.Location = new System.Drawing.Point(519, 82);
             this.textBox2.Margin = new System.Windows.Forms.Padding(5);
-            this.textBox2.MaxLength = 50;
+            this.textBox2.MaxLength = 18;
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(197, 29);
             this.textBox2.TabIndex = 11;
             this.textBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.textBox2.KeyUp += new System.Windows.Forms.KeyEventHandler(this.TextBox2_KeyUp);
             // 
             // label4
             // 
@@ -259,42 +275,42 @@
             // 
             // textBox3
             // 
-            this.textBox3.Location = new System.Drawing.Point(519, 121);
+            this.textBox3.Location = new System.Drawing.Point(518, 121);
             this.textBox3.Margin = new System.Windows.Forms.Padding(5);
             this.textBox3.MaxLength = 50;
             this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(197, 29);
+            this.textBox3.Size = new System.Drawing.Size(238, 29);
             this.textBox3.TabIndex = 11;
+            this.textBox3.Text = "Explicar MVC para los package";
             this.textBox3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // button5
             // 
             this.button5.Enabled = false;
-            this.button5.Location = new System.Drawing.Point(838, 106);
+            this.button5.Location = new System.Drawing.Point(843, 122);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(137, 64);
             this.button5.TabIndex = 16;
             this.button5.Text = "ENVIAR SUBMIT";
             this.button5.UseVisualStyleBackColor = true;
             // 
-            // Num
+            // label5
             // 
-            this.Num.Frozen = true;
-            this.Num.HeaderText = "#";
-            this.Num.Name = "Num";
-            this.Num.ReadOnly = true;
-            // 
-            // Nombre
-            // 
-            this.Nombre.HeaderText = "Nombre";
-            this.Nombre.Name = "Nombre";
-            this.Nombre.ReadOnly = true;
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Palatino Linotype", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(764, 116);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(26, 32);
+            this.label5.TabIndex = 17;
+            this.label5.Text = "?";
+            this.toolTip1.SetToolTip(this.label5, "El teléfono debe contener 10 dígitos");
             // 
             // OTROS_WF
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 22F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1138, 533);
+            this.Controls.Add(this.label5);
             this.Controls.Add(this.button5);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.button4);
@@ -353,5 +369,7 @@
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.DataGridViewTextBoxColumn Num;
         private System.Windows.Forms.DataGridViewTextBoxColumn Nombre;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.ToolTip toolTip1;
     }
 }

@@ -62,6 +62,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="MODULO_I\DGV_CTABs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MODULO_I\DGV_CTABs.Designer.cs">
+      <DependentUpon>DGV_CTABs.cs</DependentUpon>
+    </Compile>
     <Compile Include="MODULO_I\EVENTOS.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -114,6 +120,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="MAIN.resx">
       <DependentUpon>MAIN.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MODULO_I\DGV_CTABs.resx">
+      <DependentUpon>DGV_CTABs.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MODULO_I\EVENTOS.resx">
       <DependentUpon>EVENTOS.cs</DependentUpon>
@@ -176,6 +185,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\maxresdefault.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="MODULO_II\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
