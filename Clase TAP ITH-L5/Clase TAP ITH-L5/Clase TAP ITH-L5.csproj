@@ -49,6 +49,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="LIBRERIA">
+      <HintPath>..\LIBRERIA\bin\Release\LIBRERIA.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -62,6 +65,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="MODULO_II\DROID.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MODULO_II\DROID.Designer.cs">
+      <DependentUpon>DROID.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MODULO_II\OPS_BASICAS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MODULO_II\OPS_BASICAS.Designer.cs">
+      <DependentUpon>OPS_BASICAS.cs</DependentUpon>
+    </Compile>
     <Compile Include="MODULO_I\DGV_CTABs.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -120,6 +135,12 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="MAIN.resx">
       <DependentUpon>MAIN.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MODULO_II\DROID.resx">
+      <DependentUpon>DROID.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MODULO_II\OPS_BASICAS.resx">
+      <DependentUpon>OPS_BASICAS.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MODULO_I\DGV_CTABs.resx">
       <DependentUpon>DGV_CTABs.cs</DependentUpon>
@@ -187,7 +208,7 @@
     <None Include="Resources\maxresdefault.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="MODULO_II\" />
+    <Content Include="MODULO_II\droids.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
