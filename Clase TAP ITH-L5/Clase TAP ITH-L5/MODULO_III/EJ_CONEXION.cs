@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Windows.Forms;
 using System.Collections.Generic;
+using System.Data;
 
 namespace Clase_TAP_ITH_L5.MODULO_III
 {
@@ -52,7 +53,6 @@ namespace Clase_TAP_ITH_L5.MODULO_III
                 if (con.EjecutaQuery(sql))
                 {
                     LimpiarForma();
-                    LlenaDGV();
 
                     MessageBox.Show(this, "Todas las operaciones fueron realizadas exitósamente", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
@@ -109,7 +109,18 @@ namespace Clase_TAP_ITH_L5.MODULO_III
             stuff = new Stuff();
             con = new Conexion("tap-l05", "localhost");
 
-            LlenaDGV();
+            //LlenaDGV();
+            try
+            {
+                DataTable dt = con.RegresaDT("SELECT * FROM empleados;");
+                dataGridView1.DataSource = dt;
+
+                dt.Dispose();
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("ERROR LOAD: " + ex.Message);
+            }
         }
 
         private void DataGridView1_MouseClick(object sender, MouseEventArgs e)
