@@ -112,10 +112,20 @@ namespace Clase_TAP_ITH_L5.MODULO_III
             //LlenaDGV();
             try
             {
-                DataTable dt = con.RegresaDT("SELECT * FROM empleados;");
-                dataGridView1.DataSource = dt;
+                var flag = con.RegresarConexion(); // flag --> Es una bandera
 
-                dt.Dispose();
+                if (flag == null)
+                {
+                    // MENSAJE DE FALTA DE CONEXIÓN  / CONEXIÓN NO REALIZADA
+                    MessageBox.Show("Conexión no establecida");
+                }
+                else
+                {
+                    DataTable dt = con.RegresaDT("SELECT * FROM empleados;");
+                    dataGridView1.DataSource = dt;
+
+                    dt.Dispose();
+                }
             }
             catch (Exception ex)
             {

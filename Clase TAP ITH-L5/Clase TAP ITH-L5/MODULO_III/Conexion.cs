@@ -12,7 +12,7 @@ namespace Clase_TAP_ITH_L5.MODULO_III
             // CONSTRUCTOR DE LA CLASE
             this.bd = db;
             this.servidor = server;
-        } // LINQ
+        }
 
         // ATRIBUTOS DE LA CONEXIÓN
         private string passwd = "";
@@ -39,6 +39,7 @@ namespace Clase_TAP_ITH_L5.MODULO_III
             catch (Exception ex)
             {
                 Console.WriteLine("ERROR AL ABRIR LA CONEXIÓN: " + ex.Message);
+                this.con = null;
                 flag = false;
             }
 
@@ -48,6 +49,32 @@ namespace Clase_TAP_ITH_L5.MODULO_III
         internal bool AbrirConexion()
         {
             return this.Conectar();
+        }
+
+        internal int PrevenirSQLInjection()
+        {
+            int rows = 0;
+
+            try
+            {
+                string sql = @"INSERT INTO empleados([nombreEmpleado], [correoEmpleado], [RFC]) VALUES(@nombre, @correo, @rfc);";
+
+                if (this.Conectar())
+                {
+                    MySqlCommand cmd = new MySqlCommand(sql, this.con);
+                    cmd.Parameters.AddWithValue("@nombre", "Felipe Ferras Gómez");
+                    cmd.Parameters.AddWithValue("@correo", "felipe@ferras.com");
+                    cmd.Parameters.AddWithValue("@rfc", "FEGA123456GMO");
+
+                    rows = cmd.ExecuteNonQuery();
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("ERROR en SQLInjection: " + ex.Message);
+            }
+
+            return rows;
         }
 
         /**
@@ -65,8 +92,14 @@ namespace Clase_TAP_ITH_L5.MODULO_III
                     MySqlCommand cmd = new MySqlCommand(sql, this.con);
 
                     // EJECUTAMOS EL COMANDO ANTERIOR
+                    /*
                     MySqlDataReader dr = cmd.ExecuteReader();
                     dr.Read();
+                    */
+                    
+                    // USE mysql; UPDATE users SET passwordUser = '' WHERE 1 > 0;
+                    int status = cmd.ExecuteNonQuery();
+                    Console.WriteLine("FILAS AFECTADAS: {0}", status);
                 }
             }
             catch (Exception ex)
@@ -100,6 +133,53 @@ namespace Clase_TAP_ITH_L5.MODULO_III
             }
 
             return dt;
+        }
+
+        internal string[] regresaValores(string sql)
+        {
+            int pos = 0;
+            string[] vals = null;
+
+            try
+            {
+                MySqlCommand cmd = new MySqlCommand(sql, con);
+                MySqlDataReader dr = cmd.ExecuteReader();
+
+                if (dr.HasRows)
+                {
+                    // DEBIDO A QUE EL MÉTODO QUE CUENTA EL NÚMERO DE FILAS QUE TE REGRESA UN QUERY HA SIDO DESCONTINUADO, NECESITAMOS CONOCER EL NÚMERO DE FILAS QUE TE REGRESA
+                    while (dr.Read())
+                    {
+                        pos++;
+                    }
+
+                    // CREAMOS EL ARRELO QUE ALMACENARÁ TODOS LOS VALORES
+                    vals = new string[pos];
+
+                    pos = 0; // REINICIAMOS A 0 PARA PODER REUTILIZARLO
+                    dr.Dispose(); // DADO QUE YA 'AGOTAMOS' EL RECURSO, ES NECESARIO REINICIARLO
+                    dr = cmd.ExecuteReader();
+
+                    while (dr.Read())
+                    {
+                        // Si algún registor está guardado como 000-00-00, les marcará error e interrumpirá la lectura
+                        DateTime dt = dr.GetDateTime("fecha");
+                        vals[pos] = dt.ToString();
+                        pos++;
+                    }
+                }
+
+                dr.Close();
+                cmd.Dispose();
+                con.Close();
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+                return null;
+            }
+
+            return vals;
         }
 
         internal MySqlConnection RegresarConexion()
